@@ -32,7 +32,7 @@ def add_assistant_message(messages, text):
 def chat(messages):
     response = client.messages.create(
         model=model,
-        max_tokens=1000,
+        max_tokens=16000,
         system=SYSTEM_PROMPT,
         messages=messages,
     )
